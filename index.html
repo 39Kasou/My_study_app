@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私たちの勉強アプリ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ホーム画面 -->
+        <div id="homeScreen">
+
+            <h1>勉強アプリ</h1>
+
+            <button id="studyButton">
+                問題を解く
+            </button>
+
+            <button id="editButton">
+                作成・編集
+            </button>
+
+        </div>
+
+        <!-- 勉強画面 -->
+        <div id="studyScreen" style="display: none;">
+
+            <h1>問題を解く</h1>
+
+            <div id="studyPageList"></div>
+
+            <div id="questionArea" style="display: none;">
+
+                <!-- 問題エリア -->
+                <div class="page-item question-box">
+
+                    <div id="studyQuestion"></div>
+
+                </div>
+
+                <!-- 答えエリア -->
+                <div class="page-item answer-box" id="answerArea">
+
+                    <div id="studyAnswer"></div>
+
+                </div>
+
+                <!-- ボタンエリア -->
+                <div id="buttonArea">
+
+                    <button id="showAnswerButton">
+                        答えを見る
+                    </button>
+
+                    <button id="nextQuestionButton">
+                        次の問題
+                    </button>
+
+                    <button id="backFromStudy">
+                        戻る
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 編集画面 -->
+        <div id="editScreen" style="display: none;">
+
+            <h1>作成・編集</h1>
+
+            <button id="addPageButton">
+                ページ追加
+            </button>
+
+            <div id="pageList"></div>
+
+            <button id="backFromEdit">
+                戻る
+            </button>
+
+        </div>
+
+        <!-- ページ詳細画面 -->
+        <div id="pageScreen" style="display: none;">
+
+            <h1 id="pageTitle">ページ名</h1>
+
+            <button id="addQuestionButton">
+                問題追加
+            </button>
+
+            <div id="questionList"></div>
+
+            <button id="backFromPage">
+                戻る
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

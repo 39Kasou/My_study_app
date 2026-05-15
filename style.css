@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f2;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #355c57;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 14px;
+
+    margin-bottom: 15px;
+
+    background-color: #7bb8b0;
+    color: white;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.page-item {
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 14px;
+
+    margin-bottom: 10px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-item span {
+    flex: 1;
+    text-align: center;
+}
+
+#questionArea {
+    margin-top: 20px;
+}
+
+#studyQuestion {
+    font-size: 24px;
+    text-align: center;
+    min-height: 40px;
+}
+
+#answerArea {
+    min-height: 80px;
+    margin-top: 15px;
+}
+
+#studyAnswer {
+    font-size: 22px;
+    text-align: center;
+}
+
+#showAnswerButton,
+#nextQuestionButton {
+    margin-top: 15px;
+}
+
+.question-box {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+
+    margin-top: 20px;
+}
+
+.answer-box {
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    margin-top: 15px;
+}
+
+#buttonArea {
+    margin-top: 70px;
+}
+
+#showAnswerButton,
+#nextQuestionButton {
+    margin-bottom: 15px;
+}
+
+.delete-page-button,
+.delete-question-button {
+    background-color: #c97c7c;
+
+    width: 120px;
+    margin-top: 10px;
+}
