@@ -123,16 +123,28 @@ function showRandomQuestion() {
 
     const questions = pages[currentStudyPage];
 
-    if (questions.length === 0) {
+    if (!questions) {
 
-        alert("問題がありません");
+        alert("ページデータが見つかりません");
+
         return;
     }
 
-    const randomIndex = Math.floor(Math.random() * questions.length);
+    if (questions.length === 0) {
+
+        alert("問題がありません");
+
+        return;
+    }
+
+    const randomIndex =
+        Math.floor(Math.random() * questions.length);
+
     currentQuestion = questions[randomIndex];
 
-    studyQuestion.textContent = currentQuestion.question;
+    studyQuestion.textContent =
+        currentQuestion.question;
+
     studyAnswer.textContent = "";
 
     questionArea.style.display = "block";
@@ -298,5 +310,16 @@ showAnswerButton.addEventListener("click", () => {
 nextQuestionButton.addEventListener("click", () => {
 
     showRandomQuestion();
+
+});
+
+const resetDataButton =
+    document.getElementById("resetDataButton");
+
+resetDataButton.addEventListener("click", () => {
+
+    localStorage.clear();
+
+    alert("データを初期化しました");
 
 });
