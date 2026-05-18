@@ -9,6 +9,7 @@ const editButton = document.getElementById("editButton");
 
 const backFromStudy = document.getElementById("backFromStudy");
 const backFromEdit = document.getElementById("backFromEdit");
+const backFromStudySelect = document.getElementById("backFromStudySelect");
 
 
 const addPageButton = document.getElementById("addPageButton");
@@ -104,6 +105,14 @@ function displayStudyPages() {
         div.className = "page-item";
 
         div.textContent = pageName;
+
+        div.addEventListener("click", () => {
+
+            currentStudyPage = pageName;
+
+            showRandomQuestion();
+
+        });
         
         studyPageList.appendChild(div);
 
@@ -213,6 +222,10 @@ backFromStudy.addEventListener("click", () => {
 });
 
 backFromEdit.addEventListener("click", () => {
+    showScreen(homeScreen);
+});
+
+backFromStudySelect.addEventListener("click", () => {
     showScreen(homeScreen);
 });
 
